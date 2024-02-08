@@ -28,6 +28,8 @@ class RutaRepository (var context: Context) {
         return this._rutaDao.getAll().toMutableList()
     }
 
-    //fun save():
+    fun save(){
+
+    }
 
 }

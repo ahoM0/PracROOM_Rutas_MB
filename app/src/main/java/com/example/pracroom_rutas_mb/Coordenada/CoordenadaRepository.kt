@@ -28,6 +28,7 @@ class CoordenadaRepository(var context: Context) {
         return this._coordenadaDao.getAll().toMutableList()
     }
 
+    fun save(){
 
-
+    }
 }
