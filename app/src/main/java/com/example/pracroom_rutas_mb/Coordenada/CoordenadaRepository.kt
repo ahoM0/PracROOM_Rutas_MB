@@ -24,7 +24,7 @@ class CoordenadaRepository(var context: Context) {
         this._coordenadaDao.update(coordenada)
     }
 
-    fun getAll():List<Coordenada>{
+    fun getAll():MutableList<Coordenada>{
         return this._coordenadaDao.getAll().toMutableList()
     }
 

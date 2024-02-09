@@ -8,7 +8,7 @@ import com.example.room_rutasgps_mb.Coordenada.Coordenada
 @Entity(tableName="ruta")
 data class Ruta(
     @PrimaryKey(autoGenerate = true)
-    var id : Long? = null,
+    var  id : Long? = null,
 
     @ColumnInfo(name="nombre")
     var nombre : String="",
@@ -24,4 +24,4 @@ data class Ruta(
 
     @ColumnInfo(name="coordenadas")
     var coordenadas: List<Coordenada>?=null
-)
+){}

@@ -24,7 +24,7 @@ class RutaRepository (var context: Context) {
         this._rutaDao.update(ruta)
     }
 
-    fun getAll() : List<Ruta>{
+    fun getAll() : MutableList<Ruta>{
         return this._rutaDao.getAll().toMutableList()
     }
 

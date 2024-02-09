@@ -18,4 +18,6 @@ interface CoordenadaDao {
 
     @Query("SELECT * FROM coordenada")
     fun getAll(): List<Coordenada>
+
+
 }

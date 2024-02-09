@@ -6,7 +6,14 @@ import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 import com.example.room_rutasgps_mb.Ruta.Ruta
 
-@Entity(tableName = "coordenada")
+@Entity(foreignKeys = [
+    ForeignKey(
+        entity = Ruta::class,
+        childColumns = ["id"],
+        parentColumns = ["Rutaid"],
+        onDelete = ForeignKey.CASCADE
+    )
+])
 data class Coordenada(
     var Rutaid : Long? = null,
 
